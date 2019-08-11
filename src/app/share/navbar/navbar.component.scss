@@ -1,0 +1,84 @@
+@import '../../../styles.scss';
+
+.bar{
+    background: #b5b1b1;
+    height: 3px;
+    width: 25px;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+.container-fluid{
+  margin:0;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.nav-toggle{
+  margin: 20px 5px;
+  cursor: pointer;
+}
+.nav-container{
+  position: fixed;
+  display: flex;
+  border-bottom: 1px solid #ded7d7;
+  flex-direction: row;
+  padding: 4px 4px;
+  background: white;
+  top: 0;
+  width: 100%;
+  
+}
+.breadcrumb{
+  @extend .nav-container;
+  margin-top: 68px;
+  border-radius: 0;
+  border-top: 1px solid #ded7d7;
+  padding: 5px 10px;
+}
+.breadcrumb-link{
+  font-size: 14px;
+  color: gray;
+  padding: 4px 4px;
+
+}
+.product-title{
+  margin: 10px 11px;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  list-style: none;
+  margin-bottom: 0;
+  justify-content: space-around;
+  line-height: 40px;
+}
+ul li a:hover{
+  color: $nav-link-color;
+}
+ul li{
+  line-height: 60px;
+}
+ul li a{
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  color:  $nav-link-color-default;
+}
+.active{
+  background: $nav-link-bgcolor;
+  color: $nav-link-color !important;
+}
+
+.last-child{
+  margin-left: auto;
+}
+
+.test{
+  display: flex;
+  flex-direction: column;
+}

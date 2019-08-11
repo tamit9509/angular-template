@@ -2,9 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: '<router-outlet></router-outlet>',
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'pms';
+  isSidebarOpen: boolean;
+
+  showSidebar(event) {
+    this.isSidebarOpen = event;
+  }
 }

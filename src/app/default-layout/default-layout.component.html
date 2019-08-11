@@ -1,0 +1,7 @@
+<app-navbar></app-navbar>
+<!-- <app-breadcrumb></app-breadcrumb> -->
+<app-sidebar [sidebarItems]="sidebarItems"></app-sidebar>
+<!-- <app-table></app-table> -->
+<div [ngClass]="{'container-fluid': true,'open-sidebar':open,'close-sidebar':!open}">
+  <router-outlet></router-outlet>
+</div>

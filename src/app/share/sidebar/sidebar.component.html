@@ -1,0 +1,21 @@
+<div id="mySidenav" [ngClass]="{'sidenav': true,'open-sidenav':open,'close-sidenav':!open}">
+  <ul>
+    <li *ngFor="let item of sidebarItems" class="{{item.class}}">
+      <a *ngIf="!item.label;else label" [routerLink]="[item.url]" routerLinkActive="active" (click)="item">
+        <i class="{{item.icon}} front-icon"></i>
+        <span class="list-text">{{item.name}}</span>
+        <!-- TODO: place below icons if child node exist -->
+        <i class="fa fa-chevron-right float-right back-icon" *ngIf="item.children"></i>
+        <span class="float-right float-right badge badge-{{item.badge.variant}}"
+          *ngIf="item.badge">{{item.badge.text}}</span>
+      </a>
+      <ng-template #label>
+        <span class="{{item.label.class}}">{{item.label.variant}}</span>
+      </ng-template>
+
+    </li>
+
+  </ul>
+
+
+</div>

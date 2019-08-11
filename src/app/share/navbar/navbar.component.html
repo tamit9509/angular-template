@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <nav [ngClass]="{'nav-container': true,'open-sidebar':open,'close-sidebar':!open}">
+    <div class="product-title">
+      <a href=# class="navbar-brand">Brand</a>
+    </div>
+    <div class="nav-toggle" (click)="openNav()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul>
+      <li><a href="#" class="active">Item1</a></li>
+      <li><a href="#">Item2</a></li>
+      <li><a href="#">Item3</a></li>
+      <li><a href="#">Item4</a></li>
+      <li><a href="#">Item5</a></li>
+    </ul>
+  </nav>
+  <!-- Breadcrumb -->
+  <div [ngClass]="{'breadcrumb': true,'open-sidebar':open,'close-sidebar':!open}">
+    <span class="breadcrumb-link">Home</span>
+    <span class="breadcrumb-link">/</span>
+    <span class="breadcrumb-link">Dashboard</span>
+  </div>
+
+</div>

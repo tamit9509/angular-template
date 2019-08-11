@@ -1,0 +1,82 @@
+@import '../../../styles.scss';
+
+.open-sidenav{
+  width: $sidebar-width !important;
+  transition: 0.5s;
+}
+.close-sidenav{
+  width: 0 !important;
+  transition: 0.5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#2f363a;
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+
+.sidenav a {
+  position: relative;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  display: block;
+}
+.list-text {
+  padding-left:20px;
+}
+.front-icon{
+  color: #21d3b266;
+}
+.back-icon{
+  line-height: 20px;
+  font-size: 9px;
+  color: #7d7d7d;
+}
+.icon{
+  position: absolute; 
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li a{
+  padding:8px 5px 8px 24px;
+  cursor: pointer;
+}
+
+li a:hover{
+  background: #989191;
+}
+.section{
+  color: #989191;
+  padding-left: 5px; 
+}
+.active{
+  background: #3a4248 !important;
+}
+.label{
+  font-size: 14px;
+  color: rgb(172, 172, 172);
+  margin-left: 10px;
+}
+
+// .sidenav .closebtn {
+//   position: absolute;
+//   top: 0;
+//   right: 25px;
+//   font-size: 36px;
+//   margin-left: 50px;
+// }
+
+// @media screen and (max-height: 450px) {
+//   .sidenav {padding-top: 15px;}
+//   .sidenav a {font-size: 18px;}
+// }

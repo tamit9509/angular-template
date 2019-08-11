@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+$nav-link-color: #7067f1;
+$nav-link-color-default: #6c7293;
+$nav-link-bgcolor: #f1f1f1;
+$sidebar-width:200px;
+
+html a{
+  text-decoration: none !important;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f9f9fc;
+}
+
+.open-sidebar{
+  margin-left: $sidebar-width !important;
+  transition: 0.5s;
+}
+.close-sidebar{
+  margin-left: 0 !important;
+  transition: 0.5s;
+}
+.nav-bar {
+  padding: 3%;
+}
+.active{
+  padding: 0px 20px;
+  background: #f9f9fc;
+}
+
+.close-icon {
+  font-size: 14px;
+  color: #525252;
+  
+}
+
+.close-icon-div {
+  background: #f3f3f3;
+  padding: 3px 10px;
+  margin: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-icon-div:hover {
+  background: $nav-link-color;
+}
+
+.close-icon-div:hover .close-icon {
+  color: #f3f3f3;
+}
